@@ -20,6 +20,3 @@ Users can upload retinal or eye images, and the application will analyze them us
 - **Deployment**:  
   - Frontend → Vercel / Netlify  
   - Backend → Render / AWS / Heroku  
-
-## 📂 Project Structure
-
