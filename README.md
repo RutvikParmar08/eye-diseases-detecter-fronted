@@ -1,85 +1,25 @@
-# 👁️ EyeAI - AI-Powered Eye Disease Detection  
+# EyeAI - Eye Disease Detection using AI
 
-![React](https://img.shields.io/badge/Frontend-React-blue?logo=react)  
-![FastAPI](https://img.shields.io/badge/Backend-FastAPI-green?logo=fastapi)  
-![Python](https://img.shields.io/badge/ML-Python-yellow?logo=python)  
-![License](https://img.shields.io/badge/License-MIT-purple)  
-![Status](https://img.shields.io/badge/Status-Active-success)  
+EyeAI is a web application designed to assist in detecting eye diseases using **AI/ML models**.  
+Users can upload retinal or eye images, and the application will analyze them using a trained AI model to provide predictions with confidence scores.
 
-EyeAI is a **web application** powered by **AI/ML models** to detect eye diseases from uploaded images.  
-It provides **instant predictions**, **confidence scores**, and a **modern UI** for doctors, researchers, and students.  
+## 🚀 Features
 
----
+- **AI-based Prediction**: Upload an eye image and get instant AI analysis results.  
+- **Dark/Light Mode**: Toggle between dark and light themes.  
+- **Image Preview**: See the uploaded image before analysis.  
+- **Confidence Score & Inference Time**: View AI confidence and time taken for predictions.  
+- **Responsive UI**: Works on all devices.  
+- **Medical Disclaimer**: For educational/research purposes only.
 
-## 📸 Demo  
+## 🛠️ Tech Stack
 
-| Home Page | AI Analysis | Result Page |
-|-----------|-------------|-------------|
-| ![Home](demo/home.png) | ![Upload](demo/upload.png) | ![Result](demo/result.png) |
+- **Frontend**: React.js, CSS  
+- **Backend**: FastAPI / Flask (Python)  
+- **AI/ML Model**: Trained model for eye disease detection  
+- **Deployment**:  
+  - Frontend → Vercel / Netlify  
+  - Backend → Render / AWS / Heroku  
 
-> Replace the above images with real screenshots or GIFs from your project.
+## 📂 Project Structure
 
----
-
-## 🚀 Features  
-
-- 🧠 **AI-powered Analysis**: Detect eye diseases in seconds.  
-- 🌓 **Dark/Light Mode**: Switch themes instantly.  
-- 🖼 **Image Preview**: View the uploaded image before processing.  
-- ⚡ **Fast Predictions**: Confidence score & inference time provided.  
-- 📱 **Responsive Design**: Works on all devices.  
-- ⚕️ **Medical Disclaimer**: For educational use only.  
-
----
-
-## 🛠️ Tech Stack  
-
-| Technology     | Usage                              |
-|----------------|------------------------------------|
-| **React.js**    | Frontend UI                        |
-| **FastAPI**     | Backend API for predictions        |
-| **Python (ML)** | AI Model for Eye Disease Detection |
-| **CSS**         | Styling & Animations               |
-| **Vercel**      | Frontend Deployment                |
-| **Render**      | Backend Deployment                 |
-
----
-
-## 📂 Project Structure  
-
-eyeai/
-├── frontend/ # React frontend
-│ ├── src/
-│ │ ├── App.js
-│ │ ├── App.css
-│ │ └── ...
-│ └── package.json
-├── backend/ # FastAPI backend
-│ ├── main.py
-│ ├── model.pkl
-│ └── ...
-└── README.md
-
-yaml
-Copy code
-
----
-
-## ⚡ Installation  
-
-### 1️⃣ Clone the Repository  
-```bash
-git clone https://github.com/your-username/eyeai.git
-cd eyeai
-2️⃣ Install Frontend Dependencies
-bash
-Copy code
-cd frontend
-npm install
-npm start
-3️⃣ Install Backend Dependencies
-bash
-Copy code
-cd backend
-pip install -r requirements.txt
-uvicorn main:app --reload
