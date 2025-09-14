@@ -10,6 +10,8 @@ function App() {
   const [accuracy, setAccuracy] = useState("");
   const [isDarkMode, setIsDarkMode] = useState(false);
 
+  const API_URL = "https://eye-diseases-detecter.onrender.com";
+
   const handleFileChange = (e) => {
     const selectedFile = e.target.files[0];
     setFile(selectedFile);
@@ -26,7 +28,7 @@ function App() {
     formData.append("file", file);
 
     try {
-      const response = await fetch("http://localhost:8000/predict", {
+      const response = await fetch(API_URL+"/predict", {
         method: "POST",
         body: formData,
       });
